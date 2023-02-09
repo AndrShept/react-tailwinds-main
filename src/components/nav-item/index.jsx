@@ -8,13 +8,13 @@ export const NavItem = ({ text, children }) => {
     <div className="relative">
       <div className="flex space-x-2 cursor-pointer items-center">
         <span
-          onClick={() => children && setSelected(text !== selected ? text : "")}
           className="text-medium-gray hover:text-almost-black"
+          onClick={() => children && setSelected(text != selected ? text : "")}
         >
           {text}
         </span>
-        {selected && children !== text && <ArrowDownIcon />}
-        {selected && children === text && <ArrowUpIcon />}
+        {children && selected !== text && <ArrowDownIcon />}
+        {children && selected === text && <ArrowUpIcon />}
       </div>
       {selected && children}
     </div>
