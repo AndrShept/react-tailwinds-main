@@ -1,10 +1,15 @@
-import { Wrapper } from "./components/wrapper";
+import { Header } from "./components/header";
+
+import { Wrapper } from "./components/wrapper/index";
 
 function App() {
   return (
-    <div className="App">
-      <Wrapper />
-    </div>
+    <Wrapper>
+      <Header />
+      
+
+
+    </Wrapper>
   );
 }
 
