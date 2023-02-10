@@ -10,6 +10,11 @@ export const NavItem = ({ text, children }) => {
         <span
           className='text-medium-gray hover:text-almost-black'
           onClick={() => children && setSelected(text !== selected ? text : '')}
+          // onMouseEnter={() => children && setSelected(text !== selected ? text : '')}
+          // onMouseLeave={() => children && setSelected(text !== selected ? text : '')}
+          onMouseOver={() => children && setSelected(text !== selected ? text : '')}
+          // onMouseOut={setSelected(selected !== children ? '' : text)}
+          
         >
           {text}
         </span>
