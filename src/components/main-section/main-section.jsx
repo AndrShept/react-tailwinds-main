@@ -15,6 +15,13 @@ export const MainSection = () => {
           {`Lorem ipsum dolor, sit amet consectetur adipisicing elit.\n Amet ullam dolorum animi atque vitae exercitationem\n quibusdam maiores adipisci qui harum.`}
         </p>
         <Button isFilled={true}> Learn More</Button>
+
+        <div className='flex items-end justify-between mt-36'>
+          <Databiz />
+          <Audiophile />
+          <Meet />
+          <Maker />
+        </div>
       </div>
     </section>
   );
