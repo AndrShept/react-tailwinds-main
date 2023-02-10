@@ -8,20 +8,23 @@ import { Button } from '../button';
 
 export const MainSection = () => {
   return (
-    <section className='w-full flex mt-6 '>
-      <div className='relative  text-left mt-12 '>
+    <section className='w-full flex mt-6 h-screen justify-between  '>
+      <div className=' relative text-left mt-12 '>
         <h1 className='text-8xl font-medium mt-6 whitespace-pre-line'>{`Make\n remote work`}</h1>
         <p className='text-medium-gray text-lg my-12 whitespace-pre-line '>
           {`Lorem ipsum dolor, sit amet consectetur adipisicing elit.\n Amet ullam dolorum animi atque vitae exercitationem\n quibusdam maiores adipisci qui harum.`}
         </p>
-        <Button isFilled={true}> Learn More</Button>
+        <Button isFilled={true}>Learn More</Button>
 
-        <div className='flex items-end justify-between mt-36 items-center'>
+        <div className='flex justify-around absolute  w-full bottom-1'>
           <Databiz />
           <Audiophile />
           <Meet />
           <Maker />
         </div>
+      </div>
+      <div className='flex w-2/4 m-10 ' >
+        <img src={MenImage} alt="man" />
       </div>
     </section>
   );
