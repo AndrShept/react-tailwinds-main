@@ -16,7 +16,7 @@ export const MainSection = () => {
         </p>
         <Button isFilled={true}> Learn More</Button>
 
-        <div className='flex items-end justify-between mt-36'>
+        <div className='flex items-end justify-between mt-36 items-center'>
           <Databiz />
           <Audiophile />
           <Meet />

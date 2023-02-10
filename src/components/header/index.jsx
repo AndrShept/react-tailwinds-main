@@ -21,8 +21,8 @@ export const Header = () => {
         <NavItem text='About' />
       </nav>
       <div className=' ml-auto flex space-x-5'>
-        <Button>Loggin</Button>
-        <Button hasBordder={true}>Register</Button>
+        <Button >Login</Button>
+        <Button  hasBordder={true}>Register</Button>
       </div>
     </header>
   );
