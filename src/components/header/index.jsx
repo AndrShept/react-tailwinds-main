@@ -7,7 +7,7 @@ import { COMPANY, FEATURES } from './constants';
 
 export const Header = () => {
   return (
-    <header className='flex '>
+    <header className='flex items-center mt-4 '>
       <LogoIcon />
       <nav className='flex ml-10 space-x-5 items-center'>
         <NavItem text='Feature'>
